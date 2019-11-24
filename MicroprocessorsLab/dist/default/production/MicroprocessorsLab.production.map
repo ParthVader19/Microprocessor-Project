@@ -1,0 +1,178 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Nov 21 15:15:41 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                      rst       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                     main       code   0x000006    program   0x0003f2
+                      LCD       code   0x0003f8    program   0x000132
+                     UART       code   0x00052a    program   0x000028
+                      ADC       code   0x000552    program   0x00001a
+.config_300000_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300003    program   0x000001
+.config_300004_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300004    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/CONFIG.    romdata   0x30000d    program   0x000001
+                     acs0      udata   0x000000       data   0x00000e
+                  acs_ovr      udata   0x00000e       data   0x000001
+                   tables      udata   0x000400       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00056b      
+                            0x300000    0x300006      
+                            0x300008    0x30000d      
+            1401 out of 132120 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 ADC_Read   0x000564    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+                ADC_Setup   0x000552    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+                A_pattern   0x00039e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                B_pattern   0x0003b0    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                C_pattern   0x0003c2    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                D_pattern   0x0003d4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+               LCD_Enable   0x0004ce    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_Hex_Nib   0x000444    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+         LCD_Loop_message   0x000462    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Send_Byte_D   0x00048a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+        LCD_Send_Byte_D_b   0x0004ac    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Send_Byte_I   0x00046e    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                LCD_Setup   0x0003f8    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+            LCD_Write_Hex   0x000442    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Write_Hex_b   0x000458    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+        LCD_Write_Message   0x000460    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                LCD_delay   0x000514    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_delay_1   0x000262    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             LCD_delay_ms   0x0004f2    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+           LCD_delay_x4us   0x000500    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+            Space_pattern   0x0003e6    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             SplashScreen   0x000284    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+        UART_Loop_message   0x00053e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+               UART_Setup   0x00052a    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+       UART_Transmit_Byte   0x00054a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+    UART_Transmit_Message   0x00053c    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+                 adc_loop   0x000566    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+                    add10   0x0001da    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   add100   0x0001ee    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+       display_end_screen   0x000320    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            display_fixed   0x0001f8    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+        display_loop_FSR0   0x00014c    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            display_space   0x000252    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             display_test   0x00025a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                erase_all   0x0002fe    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+               erase_loop   0x00030c    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                incorrect   0x0001ca    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+     internal_display_pat   0x000132    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   lcdlp1   0x000516    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                   lcdlp2   0x00026a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   lcdlp2   0x0004f4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                 lcdlp2_1   0x000266    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                  movDRAM   0x00051e    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          resetdisplayPos   0x00027a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    setup   0x000006    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            shift_display   0x00019e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            shift_pattern   0x0001b6    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    start   0x00001a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    sub10   0x0001d0    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   sub100   0x0001e4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                LCD_cnt_h   0x000002       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                LCD_cnt_l   0x000001       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+               LCD_cnt_ms   0x000003       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_counter   0x000005       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_hex_tmp   0x00000e       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                  LCD_tmp   0x000004       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                N_pattern   0x00000c       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             UART_counter   0x000000       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+                  counter   0x000006       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+              delay_count   0x000007       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+           movPattern_bot   0x00000a       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+           movPattern_top   0x000008       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                  myArray   0x000400       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    setup   0x000006    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    start   0x00001a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+     internal_display_pat   0x000132    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+        display_loop_FSR0   0x00014c    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            shift_display   0x00019e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            shift_pattern   0x0001b6    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                incorrect   0x0001ca    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    sub10   0x0001d0    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                    add10   0x0001da    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   sub100   0x0001e4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   add100   0x0001ee    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            display_fixed   0x0001f8    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            display_space   0x000252    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             display_test   0x00025a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+              LCD_delay_1   0x000262    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                 lcdlp2_1   0x000266    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                   lcdlp2   0x00026a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+          resetdisplayPos   0x00027a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+             SplashScreen   0x000284    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                erase_all   0x0002fe    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+               erase_loop   0x00030c    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+       display_end_screen   0x000320    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                A_pattern   0x00039e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                B_pattern   0x0003b0    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                C_pattern   0x0003c2    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                D_pattern   0x0003d4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+            Space_pattern   0x0003e6    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                LCD_Setup   0x0003f8    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+            LCD_Write_Hex   0x000442    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_Hex_Nib   0x000444    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Write_Hex_b   0x000458    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+        LCD_Write_Message   0x000460    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+         LCD_Loop_message   0x000462    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Send_Byte_I   0x00046e    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+          LCD_Send_Byte_D   0x00048a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+        LCD_Send_Byte_D_b   0x0004ac    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+               LCD_Enable   0x0004ce    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+             LCD_delay_ms   0x0004f2    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                   lcdlp2   0x0004f4    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+           LCD_delay_x4us   0x000500    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                LCD_delay   0x000514    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                   lcdlp1   0x000516    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                  movDRAM   0x00051e    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+               UART_Setup   0x00052a    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+    UART_Transmit_Message   0x00053c    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+        UART_Loop_message   0x00053e    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+       UART_Transmit_Byte   0x00054a    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+                ADC_Setup   0x000552    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+                 ADC_Read   0x000564    program     extern C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+                 adc_loop   0x000566    program     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\ADC.asm
+             UART_counter   0x000000       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\UART.asm
+                LCD_cnt_l   0x000001       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                LCD_cnt_h   0x000002       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+               LCD_cnt_ms   0x000003       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                  LCD_tmp   0x000004       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+              LCD_counter   0x000005       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                  counter   0x000006       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+              delay_count   0x000007       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+           movPattern_top   0x000008       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+           movPattern_bot   0x00000a       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+                N_pattern   0x00000c       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+              LCD_hex_tmp   0x00000e       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\LCD - Copy.asm
+                  myArray   0x000400       data     static C:\Users\p_vag\OneDrive\Desktop\Microprocessor Labs\MicroprocessorsLab\Simple1.asm
+
+
